@@ -22,9 +22,6 @@ bool TFIDF::readExceptions(char * argv){
 bool TFIDF::readDocuments(char *argv){
 	ifstream myFile(argv); //Begins reading from a file
 	string temp;
-	//HAVING A PROBLEM READING EXCEPTIONS FILE, ASK ABOUT THIS TOMORROW MORNING
-	//Problem with intermediate counts is that I am not reading exceptions file. 
-	//Once I fix reading in exceptions file intermediate count should be fine along with answer
 	unsigned int i = 1;
 	while(myFile >> temp){
 		PunctAndCap document;
